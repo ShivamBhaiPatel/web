@@ -1,15 +1,16 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
     <>
-      <div className="container-fluid nav_bg ">
+      <div className="container-fluid nav_bg col-12">
         <div className="row">
           <div className="col-12 mx-auto">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-              <a class="navbar-brand" href="/">
+            <nav className="navbar navbar-expand-lg navbar-light bg-light">
+              <NavLink activeClassName="menu_active" className="navbar-brand" to="/">
                 Spark
-              </a>
+              </NavLink>
               <button
                 class="navbar-toggler"
                 type="button"
@@ -21,27 +22,27 @@ const Navbar = () => {
               >
                 <span class="navbar-toggler-icon"></span>
               </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
-                  <li class="nav-item active">
-                    <a class="nav-link" href="/">
+              <div className="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul className="navbar-nav ms-auto">
+                  <li className="nav-item active">
+                    <NavLink exact activeClassName="menu_active" className="nav-link" aria-current="page" to="/">
                       Home
-                    </a>
+                    </NavLink>
                   </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="/about">
+                  <li className="nav-item">
+                    <NavLink className="nav-link" activeClassName="menu_active" to="/about">
                       About Us
-                    </a>
+                    </NavLink>
                   </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="/service">
+                  <li className="nav-item">
+                    <NavLink className="nav-link" activeClassName="menu_active" to="/service">
                       Service
-                    </a>
+                    </NavLink>
                   </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="/contact">
+                  <li className="nav-item">
+                    <NavLink className="nav-link" activeClassName="menu_active" to="/contact">
                       Contact
-                    </a>
+                    </NavLink>
                   </li>
                   
                 </ul>
