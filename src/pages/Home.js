@@ -1,8 +1,17 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
+import web from "../images/11.gif";
+import Common from "./Common";
 
 const Home = () => {
   return (
-      <h1>Home Page</h1>
+    <>
+      <Common 
+              name="Grow your bussiness with"
+              imgsrc={web}
+              visit="/contact"
+              btname="Get Started"/>
+    </>
   );
 };
 export default Home;
