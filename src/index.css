@@ -5,6 +5,14 @@ body {
   padding: 0;
   font-family: muli;
 }
+body {
+  background: linear-gradient(
+      to left top,
+      rgb(133, 205, 247),
+      rgb(245, 220, 109)
+    )
+    fixed;
+}
 
 .navbar {
   background-color: #fff;
@@ -14,27 +22,26 @@ body {
   color: #565387 !important;
 }
 .navbar a {
-  font-size: 1.3rem;    
+  font-size: 1.3rem;
   text-transform: capitalize;
 }
 .menu_active {
   font-weight: bold;
   border-bottom: 1.5px solid red;
 }
-.navbar a:hover{
+.navbar a:hover {
   color: aqua !important;
 }
 
-@media (max-width:991px) {
-  .navbar-brand{
+@media (max-width: 991px) {
+  .navbar-brand {
     font-size: 1.5rem !important;
   }
-  .menu_active{
+  .menu_active {
     font-weight: bold;
     border-bottom: none;
   }
 }
-
 
 /* 
 Home sections
@@ -46,7 +53,7 @@ Home sections
   margin-top: 70px;
 }
 
-#header h1{
+#header h1 {
   margin: 0 0 10px;
   font-size: 48px;
   font-weight: 700;
@@ -102,4 +109,50 @@ Home sections
   100% {
     transform: translateY(-10px);
   }
+}
+/* 
+card size */
+.card-size {
+  height: 500px;
+  width: 350px;
+}
+
+/* 
+Footer font style
+*/
+/* Style all font awesome icons */
+.fa {
+  padding: 10px;
+  font-size: 10px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Facebook */
+.fa-facebook {
+  background: #3b5998;
+  color: white;
+}
+
+/* Facebook */
+.fa-instagram {
+  background: rgb(240, 22, 124);
+  color: white;
+}
+
+/* email */
+.fa-email {
+  background: rgb(216, 36, 36);
+  color: white;
+}
+
+.w-100 {
+  padding: 0px;
+  margin-bottom: 0;
 }

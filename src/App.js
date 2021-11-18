@@ -8,6 +8,7 @@ import Contact from './pages/Contact';
 import Service from "./pages/Service";
 import Navbar from "./pages/Navbar";
 import './App.css';
+import Footer from './pages/Footer';
 
 const App =() => {
   return (
@@ -20,6 +21,7 @@ const App =() => {
         <Route exact path="/contact" element={<Contact />} />
         {/* <Route path="*" element={<Navigate to ="/" />}/> */}
       </Routes>
+      
     </>
   );
 }
