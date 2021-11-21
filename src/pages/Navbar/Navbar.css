@@ -1,0 +1,96 @@
+
+.navbar {
+    height: 3.8rem;
+    opacity: 0.8;
+    padding: 0;
+    background: linear-gradient(to top, rgb(13, 20, 54), rgba(90, 3, 39, 0.582),  rgb(13, 21, 63));
+    z-index: 1;
+    box-shadow: 0 8px 32px 0 rgba(93, 119, 207, 0.644);
+    border-radius: 0 0 5px 5px;
+    border: 1px solid rgba(97, 44, 44, 0.63);
+  }
+  .navbar-brand {
+    font-size: 1.8rem !important;
+    color: #d5d4e9 !important;
+  }
+  .logo{
+    height:40px;
+    margin:-5px 10px 0 0px;
+    border-radius: 50%;
+  }
+  .logo-subtitle{
+    font-size: small;
+  }
+  .navbar a {
+    font-size: 1.3rem;
+    text-transform: capitalize;
+  }
+  .menu_active {
+    font-weight: bold;
+    border-bottom: 1.5px solid red;
+  }
+  .navbar a:hover {
+    color: aqua !important;
+  }
+  .glass{
+    background: rgba( 255, 255, 255, 0.35 );
+    box-shadow: 0 8px 32px 0 rgba(38, 63, 143, 0.47);
+    backdrop-filter: blur( 4.5px );
+    -webkit-backdrop-filter: blur( 4.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.38 );
+  }
+  
+  
+  @media (max-width: 991px) {
+    /* .navbar{
+      padding: 0;
+    } */
+    .navbar-brand {
+      font-size: 1.6rem !important;
+    }
+    .navbar-toggler{
+      background-color: #484848;
+    }
+    .logo{
+      margin-top: 0;
+    }
+  
+    .menu_active {
+      font-weight: bold;
+      border-bottom: none;
+    }
+    .nav-item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .navbar a:hover {
+      color: aqua !important;
+      background-color: rgb(55, 54, 95);
+      border-radius: 5px;
+      padding: 5px;
+      box-shadow: inset;
+    }
+    .navbar-toggler-icon{
+      display: flex;
+    }
+  }
+  @media (min-width: 576px){
+  .navbar-expand-sm {
+      flex-wrap: nowrap;
+      justify-content: flex-start;
+  }
+  .navbar {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 0rem;
+    padding-bottom: 0.5rem;
+  }
+  *, ::after, ::before {
+    box-sizing: border-box;
+  }
+  }

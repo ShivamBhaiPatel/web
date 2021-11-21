@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import image from "../images/1.jpg";
+import image from "../../images/1.jpg";
 
 const Card = (props) => {
   return (

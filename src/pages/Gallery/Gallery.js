@@ -1,12 +1,12 @@
 import React from "react";
-import Sdata from "./Sdata";
-import Card from "./Card";
+import Sdata from "../Home/Sdata";
+import Card from "../Gallery/Card";
 
-const Service = () => {
+const Gallery = () => {
   return (
     <>
       <div className="my-5">
-        <h1 className="text-center">Our Services</h1>
+        <h1 className="text-center">Gallery</h1>
       </div>
       <div className="container-fluid mb-5">
         <div className="row">
@@ -22,4 +22,4 @@ const Service = () => {
     </>
   );
 };
-export default Service;
+export default Gallery;
