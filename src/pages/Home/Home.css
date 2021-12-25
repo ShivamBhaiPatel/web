@@ -2,6 +2,9 @@
 /* 
 Home sections
 */
+body{
+  background-repeat:no-repeat ;
+}
 
 #header {
     width: 100%;
@@ -47,4 +50,21 @@ Home sections
     justify-content: center;
     text-align: right;
   }
-  
+
+
+
+  .managing-body{
+    display: flexbox;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 350px;
+    width: 100%;
+
+  }
+  .header-img{
+    /* background-image: url(/web/src/images/spark.jpg); */
+    background-image: url(https://seasonalshop.in/assets/svg/illustrations/we-are-in-office-1.svg);
+background-repeat: no-repeat;
+/* width: 10px;
+height: 20px; */
+  }

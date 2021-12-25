@@ -1,0 +1,32 @@
+.feature-area {
+    margin: 0px ;
+    width: 100%;
+}
+.single-feature {
+    text-align: center;
+}
+.single-feature .title {
+    background: rgba(255, 79, 25, 0.658);
+    border-radius: 15px;
+    padding: 15px 0px  5px 0;
+    margin-bottom: 10px;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+single-feature:hover{
+    margin-bottom: 0px;
+    zoom: 110%;
+    padding:0;
+}
+
+sect{
+    margin: 10px 10px 10px 0px;
+}
+sect:hover{
+    background-color: rgb(165, 221, 231);  
+}

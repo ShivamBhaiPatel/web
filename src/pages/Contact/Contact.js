@@ -1,142 +1,83 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import border from "../../images/v.png";
+import emailjs from "emailjs-com";
+import FormSignup from "./FormSignup";
+import FormSuccess from "./FormSuccess";
+import "./Form.css";
 
 const Contact = () => {
-  const [data, setData] = useState({
-    fullname: "",
-    phone: "",
-    email: "",
-    address: "",
-    message: "",
-  });
+  const [isSubmitted, setIsSubmitted] = useState(false);
 
-  const InputEvent = (event) => {
-    const { name, value } = event.target;
+  function submitForm() {
+    setIsSubmitted(true);
+  }
 
-    setData((preval) => {
-      return {
-        ...preval,
-        [name]: value,
-      };
-    });
-  };
+  // const [result, showResult] = useState(false);
 
-  const formSubmit = (e) => {
-    e.preventDefault();
-    alert(
-      `Name: ${data.fullname}, Mobile number is: ${data.phone}, Email Id is: ${data.email} and Address is: ${data.address}`
-    );
-  };
+  // const form = useRef();
+
+  // const sendEmail = (e) => {
+  //   e.preventDefault();
+
+  //   emailjs.sendForm(
+  //     "service_7k4zauq",
+  //     "template_p6euk9i",
+  //     form.current,
+  //     "user_aZbMsP601zPxSDaJTbbrk"
+  //   )
+  //     .then((result) => {
+  //         console.log(result.text);
+  //     }, (error) => {
+  //         console.log(error.text);
+  //     });
+  //     e.target.reset();
+  //     showResult(true);
+  // };
+  // setTimeout(()=>{
+  //   showResult(false)
+  // },3000);
 
   return (
-    <div className="m-4 text-center">
+    <div className="m-2">
       <div className="my-5 text-center">
         <h1>Contact Us</h1>
       </div>
 
-      <div className="container  row text-center">
-        <div className="glass  col-md-5 mb-4 ms-auto">
-          <div className="icon-text my-2">
-            <span>
-              H.No.119,Neemtal,Jalalpur,Ambedkar Nagar, Uttar Pradesh,Ambedkar
-              Nagar ,224149
-            </span>
-          </div>
-          <div className="icon-text my-2">
-            <span> 7376485262</span>
-          </div>
-          <div className="icon-text">
-            <span> sparkjlp@gmail.com</span>
+      <div className="row text-center">
+        <div className="col-md-5 mb-5 ms-auto">
+          <div className="glass form-container ">
+            <div className="icon-text m-4">
+            <img src={"https://www.chartcommando.com/assets/img/newfolder/contact_us.svg"} className="contact-img" alt="common image" />
+              <span style={{ fontSize: '20px', color: 'blue'}}>Address</span>
+              <hr/>
+              <p >
+                H.No.119, Neemtal,
+                Jalalpur,Ambedkar Nagar, 
+                Uttar Pradesh,
+                224149
+              </p>
+              </div><br/>
+              <div className="icon-text m-4">
+              <span style={{ fontSize: '20px', color: 'blue' }}>Contact No.</span>
+              <hr/>
+              <p> 7376485262</p>
+              </div>
+              <br/>
+              <div className="icon-text m-4">
+              <span style={{ fontSize: '20px', color: 'blue' }}>Email Address</span>
+              <hr/>
+              <p> sparkjlp@gmail.com</p>
+            </div>
           </div>
         </div>
-        <div className="col-md-5  m-auto glass">
-          <form onSubmit={formSubmit}>
-            <div className="m-3">
-              <label for="exampleFormControlInput1" class="form-label">
-                Name
-              </label>
-              <input
-                type="ematextil"
-                className="form-control"
-                id="exampleFormControlInput1"
-                name="fullname"
-                value={data.fullname}
-                onChange={InputEvent}
-                placeholder="John Wick"
-              />
-            </div>
-            <div className="m-3">
-              <label for="exampleFormControlInput1" class="form-label">
-                Mobile No.
-              </label>
-              <input
-                type="tel"
-                className="form-control"
-                id="exampleFormControlInput1"
-                name="phone"
-                value={data.phone}
-                onChange={InputEvent}
-                placeholder="9876543210"
-              />
-            </div>
-            <div className="m-3">
-              <label for="exampleFormControlInput1" class="form-label">
-                Email address
-              </label>
-              <input
-                type="email"
-                className="form-control"
-                id="exampleFormControlInput1"
-                name="email"
-                value={data.email}
-                onChange={InputEvent}
-                placeholder="name@example.com"
-              />
-            </div>
-            <div className="m-3">
-              <label for="exampleFormControlInput1" class="form-label">
-                Address
-              </label>
-              <input
-                type="text"
-                className="form-control"
-                id="exampleFormControlInput1"
-                name="address"
-                value={data.address}
-                onChange={InputEvent}
-                placeholder="123/5, Block-10, KarolBagh, Delhi"
-              />
-            </div>
-            <div className="m-3">
-              <label for="exampleFormControlTextarea1">Message</label>
-              <textarea
-                className="form-control"
-                id="exampleFormControlTextarea1"
-                name="message"
-                value={data.message}
-                onChange={InputEvent}
-                rows="3"
-                placeholder="Type your message here"
-              >
-                Message :
-              </textarea>
-            </div>
-
-            <div className="col-12 my-3 text-center">
-              <button
-                class="btn btn-outilne-primary btn-primary me-2"
-                type="submit"
-              >
-                Send
-              </button>
-              <button
-                class="btn btn-outilne-danger btn-danger ms-2"
-                type="reset"
-              >
-                Clear
-              </button>
-            </div>
-          </form>
+        <div className="col-md-5 m-auto mb-5 ">
+          <div className="glass form-container ">
+            {!isSubmitted ? (
+              <FormSignup submitForm={submitForm} />
+            ) : (
+              <FormSuccess />
+            )}
+          </div>
         </div>
       </div>
     </div>

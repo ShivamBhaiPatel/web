@@ -15,7 +15,7 @@ const Navbar = () => {
             to="/"
           >
             <img src={logo} alt="logo image" className="logo" />
-            <strong>Spark</strong>
+            <strong>SPARK</strong>
             <span className="logo-subtitle"> Society</span>
           </NavLink>
           
