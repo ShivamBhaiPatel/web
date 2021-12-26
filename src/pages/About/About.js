@@ -12,9 +12,9 @@ const About = () => {
             <div className="col-10 mx-auto m-5">
               <div className="row">
                 <div className="col-md-6 pt-5 pt-lg-0 order-2 order-lg-1 d-flex justify-content-center flex-column">
-                  <h3>
+                  <h2>
                     <strong className="brand-name"> About Us </strong>
-                  </h3>
+                  </h2>
                   <hr />
                   <p className="my-3">
                     Society for the Public Advancement & Reign the Knowledge (SPARK) was established in the year 2019
@@ -40,7 +40,7 @@ const About = () => {
                 <div className="col-lg-6 order-1 order-lg-1">
                   <div className="header-img m-4">
                     <img
-                      src={web}
+                      src={"https://cdn.dribbble.com/users/538090/screenshots/4420086/media/7d44fa6a2328ca997211665c549423fd.gif"}
                       className="img-fluid animated"
                       alt="common image"
                     />
@@ -48,14 +48,14 @@ const About = () => {
                 </div>
                 <div className="col-md-6 pt-5 pt-lg-0 order-1 order-lg-1 d-flex justify-content-center flex-column">
                   <div className="m-4">
-                    <h3>
+                    <h2>
                       <strong className="brand-name"> Our Mission </strong>
-                    </h3>
+                    </h2>
                     <hr />
                     <p className="my-3">
                       (*)To establish school, Technical / Professional Education etc. and residential schools especially for girls
                       in order to provide modern education to educationally backward societies preferably in or around,
-                      urban, semi urban and rural areas
+                      urban, semi urban and rural areas.
                     </p>
                     <p className="my-3">
                       (*) To do health activities for the development of the society such as to prepare health workers , run

@@ -6,6 +6,7 @@
     background: linear-gradient(to top, rgb(15, 12, 59), rgba(3, 41, 90, 0.685),  rgb(27, 17, 73));
     z-index: 1;
     box-shadow: 0 8px 15px 0 rgba(93, 119, 207, 0.644);
+    width: 100%;
   }
   .navbar-brand {
     font-size: 1.9rem !important;
@@ -25,7 +26,7 @@
   }
   .menu_active {
     font-weight: bold;
-    border-bottom: 1.5px solid red;
+    border-bottom: 1.5px solid rgb(255, 246, 246);
   }
   .navbar a:hover {
     color: aqua !important;

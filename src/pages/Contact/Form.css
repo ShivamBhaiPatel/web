@@ -161,13 +161,14 @@ td {
   padding: 20px;
   font-size: 400px;
 }
-.contact-img{
+contact-img{
   /* z-index: -1;
   align-items: center;
   display:flex;
   justify-content: center; */
   
   background-repeat: no-repeat;
+  background-attachment: fixed;
   /* background-image: url(https://www.chartcommando.com/assets/img/newfolder/contact_us.svg); */
   background-image: url(http://1.bp.blogspot.com/---gb_F8Zkws/UPLAPIrQSKI/AAAAAAAAeQI/wBDD1ozT8M0/s1600/Impressive+Abstract+11.jpg);
   

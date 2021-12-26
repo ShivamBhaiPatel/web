@@ -18,11 +18,10 @@ function HomeSection() {
                       The society was established in the year 2007 for welfare and
                       education of people.It is registered under the Societies
                       Registration Act, 1860. 
-                      <br/>
                       It is located in Jalalpur, Ambedkar
                       Nagar, Uttar Pradesh.
                     </p>
-                    <a href="history.aspx">Read More</a>
+                    <a href="/about">Read More</a>
                   </div>
                 </div>
               </div>
@@ -40,7 +39,7 @@ function HomeSection() {
                       amongst the economically, socially, and educationally
                       backward sections of the society.
                     </p>
-                    <a href="vision.aspx">Read More</a>
+                    <a href="/about">Read More</a>
                   </div>
                 </div>
               </div>
@@ -59,7 +58,7 @@ function HomeSection() {
                       education amongst economically, socially, and educationally
                       backward sections of the society.
                     </p>
-                    <a href="mission.aspx">Read More</a>
+                    <a href="/about">Read More</a>
                   </div>
                 </div>
               </div>

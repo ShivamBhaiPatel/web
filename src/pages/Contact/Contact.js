@@ -50,7 +50,7 @@ const Contact = () => {
             {/* <img src={"https://www.chartcommando.com/assets/img/newfolder/contact_us.svg"} className="contact-img" alt="common image" /> */}
               <span style={{ fontSize: '20px', color: 'blue'}}>Address</span>
               <hr/>
-              <p >
+              <p>
                 H.No.119, Neemtal,
                 Jalalpur,Ambedkar Nagar, 
                 Uttar Pradesh,
