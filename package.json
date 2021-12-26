@@ -1,6 +1,6 @@
 {
   "name": "web",
-  "homepage": "https://ShivamBhaiPatel.github.io/web",
+  "homepage": "https://shivambhaipatel.github.io/sparksociety/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -9,6 +9,7 @@
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
+    "immer": "^9.0.7",
     "axios": "^0.24.0",
     "bootstrap": "^5.1.3",
     "emailjs-com": "^3.2.0",
