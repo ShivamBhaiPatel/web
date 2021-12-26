@@ -40,7 +40,7 @@ const Navbar = () => {
                   activeClassName="menu_active"
                   className="nav-link"
                   aria-current="page"
-                  to="/"
+                  to="/home"
                 >
                   Home
                 </NavLink>
@@ -58,7 +58,7 @@ const Navbar = () => {
                 <NavLink
                   className="nav-link"
                   activeClassName="menu_active"
-                  to="/service"
+                  to="/gallery"
                 >
                   Gallary
                 </NavLink>

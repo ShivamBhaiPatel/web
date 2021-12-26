@@ -38,16 +38,16 @@ const Contact = () => {
   // },3000);
 
   return (
-    <div className="m-2">
+    <div className="m-2 contact-img">
       <div className="my-5 text-center">
         <h1>Contact Us</h1>
       </div>
 
-      <div className="row text-center">
+      <div className="row text-center ">
         <div className="col-md-5 mb-5 ms-auto">
-          <div className="glass form-container ">
+          <div className="glass form-container">
             <div className="icon-text m-4">
-            <img src={"https://www.chartcommando.com/assets/img/newfolder/contact_us.svg"} className="contact-img" alt="common image" />
+            {/* <img src={"https://www.chartcommando.com/assets/img/newfolder/contact_us.svg"} className="contact-img" alt="common image" /> */}
               <span style={{ fontSize: '20px', color: 'blue'}}>Address</span>
               <hr/>
               <p >
